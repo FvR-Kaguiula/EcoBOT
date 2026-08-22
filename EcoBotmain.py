@@ -33,9 +33,9 @@ async def adios(ctx):
 #Enviar un ecomeme aleatorio (imagen)
 @bot.command("ecomeme")
 async def meme_aleatorio(ctx):
-    mem_alet = random.choice(os.listdir("C:/Users/Jose Antonio/OneDrive/Escritorio/Python Proyects/3713/M1L3/EcologizerBOT/ecomemes"))
+    mem_alet = random.choice(os.listdir("EXAMPLEDIR/EcologizerBOT/ecomemes"))
 
-    with open(f"C:/Users/Jose Antonio/OneDrive/Escritorio/Python Proyects/3713/M1L3/EcologizerBOT/ecomemes/{mem_alet}", "rb") as f:
+    with open(f"EXAMPLEDIR/EcologizerBOT/ecomemes/{mem_alet}", "rb") as f:
         picture = discord.File(f)
     await ctx.send (file=picture)
 
@@ -89,4 +89,4 @@ async def joined(ctx, member: discord.Member):
     await ctx.send(f'{member.name} joined {discord.utils.format_dt(member.joined_at)}')
 
 
-bot.run("sadda")
+bot.run("EXAMPLEKEYACCESS")
