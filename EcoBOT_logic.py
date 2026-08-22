@@ -22,9 +22,9 @@ def get_dog_image_url():
 
 def get_weather_info_url():    
     url = "https://weatherbit-v1-mashape.p.rapidapi.com/current"
-    querystring = {"lat":"-12.051170552447141","lon":"-77.03076856051939","units":"metric","lang":"es"}
+    querystring = {EXAMPLECOORD}
     headers = {
-	"x-rapidapi-key": "dd44b94613msh2c82005f6597c3fp17fafcjsnf6fe00f40a2c",
+	"x-rapidapi-key": "EXAMPLEKEYACCESS",
 	"x-rapidapi-host": "weatherbit-v1-mashape.p.rapidapi.com"
 }
     res = requests.get(url, headers=headers, params=querystring)
